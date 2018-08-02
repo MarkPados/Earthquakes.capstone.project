@@ -6,6 +6,7 @@
 #' clean_data <- eq_clean_data(raw_data)
 #'
 #' @import lubridate
+#' @import dplyr
 #'
 #' @export
 
