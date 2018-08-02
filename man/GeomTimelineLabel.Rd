@@ -4,7 +4,7 @@
 \name{GeomTimelineLabel}
 \alias{GeomTimelineLabel}
 \title{Geom timeline label ggproto}
-\format{An object of class \code{GeomTimeline} (inherits from \code{Geom}, \code{ggproto}, \code{gg}) of length 5.}
+\format{An object of class \code{GeomTimelineLabel} (inherits from \code{Geom}, \code{ggproto}, \code{gg}) of length 6.}
 \usage{
 GeomTimelineLabel
 }

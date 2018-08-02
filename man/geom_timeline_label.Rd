@@ -5,8 +5,8 @@
 \title{Geom timeline label}
 \usage{
 geom_timeline_label(mapping = NULL, data = NULL, stat = "identity",
-  position = "identity", ..., na.rm = FALSE, n_max = NULL,
-  show.legend = NA, inherit.aes = TRUE)
+  position = "identity", na.rm = FALSE, show.legend = NA,
+  inherit.aes = TRUE, ...)
 }
 \description{
 Geom timeline label

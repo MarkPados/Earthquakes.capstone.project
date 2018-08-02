@@ -12,5 +12,5 @@ geom_timeline(mapping = NULL, data = NULL, stat = "identity",
 Geom timeline
 }
 \details{
-This function created timeline chart.
+This function creates timeline chart.
 }

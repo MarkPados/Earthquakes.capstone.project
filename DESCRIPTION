@@ -14,3 +14,7 @@ Suggests: knitr,
     rmarkdown,
     testthat
 VignetteBuilder: knitr
+Imports: dplyr,
+    lubridate,
+    ggplot2,
+    leaflet
