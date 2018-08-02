@@ -45,7 +45,8 @@ test_that("ep_map works", {
     dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>%
     eq_map(annot_col = "DATE")
 
-  expect_is(eq_chart, "leafet")
+  expect_is(eq_chart, "leaflet")
+  expect_is(eq_chart, "htmlwidget")
 
 })
 
@@ -57,11 +58,12 @@ test_that("ep_map_label works", {
 
   clean_data = Earthquakes.capstone.project::eq_clean_data(raw_data)
 
-  clean_data %>%
+  eq_chart <- clean_data %>%
     dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>%
     dplyr::mutate(popup_text = eq_create_label(.)) %>%
     eq_map(annot_col = "popup_text")
 
-  expect_is(eq_chart, "leafet")
+  expect_is(eq_chart, "leaflet")
+  expect_is(eq_chart, "htmlwidget")
 
 })
