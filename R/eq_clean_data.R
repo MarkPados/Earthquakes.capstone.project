@@ -7,6 +7,18 @@
 #'
 #' @import lubridate
 #' @import dplyr
+#' @import assertthat
+#' @import bindrcpp
+#' @import glue
+#' @import magrittr
+#' @import methods
+#' @import pkgconfig
+#' @import R6
+#' @import Rcpp
+#' @import rlang
+#' @import tibble
+#' @import tidyselect
+#' @import utils
 #'
 #' @export
 
