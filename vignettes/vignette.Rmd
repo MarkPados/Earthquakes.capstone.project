@@ -1,0 +1,82 @@
+---
+title: "Earthquakes.capstone.project"
+author: "Márk Pados"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+The package `Earthquakes.capstone.project` has been built to clean and display the earthquake data from NOAA.
+
+The Package is divided into 3 sections:
+
+* Read and clean dataset
+* Create charts of the Earthquakes through the geom_timeline and geom_timeline_label functions.
+* Create charts of the Earthquakes by their geographical location through eq_map and eq_create_label function.
+
+## Read and clean data
+The cleaning part of the package is composed 2+1 functions:
+
+### eq_read_data
+'eq_read_data' opens the dataset named 'signif.txt'. It doesn't need any argument.
+
+### eq_clean_data
+'eq_clean_data' do the cleaning of the raw dataset opened by 'eq_read_data' function.
+
+### eq_location_cleaning
+'eq_location_cleaning' cleans the location variable of the dataset. It is called by eq_clean_data function.
+
+
+## Charts of earthquakes
+
+### geom_timeline
+'geom_timeline' creates timeline chart of earthquakes.
+
+### geom_timeline_label
+'geom_timeline_label' adds labels to the created timeline chart of earthquakes by 'geom_timeline'.
+
+
+## Geographical location chart of earthquakes
+
+### eq_map
+'eq_map' creates interactive chart of earthquakes.
+
+### eq_map_label
+'eq_map_label' adds labels to the interactive chart of earthquakes.
+
+
+## Examples
+
+raw_data = Earthquakes.capstone.project::eq_read_data()
+
+clean_data = Earthquakes.capstone.project::eq_clean_data(raw_data)
+
+clean_data %>%
+  filter(COUNTRY %in% c("HUNGARY", "SLOVAKIA", "CZECH REPUBLIC", "CROATIA", "POLAND"), YEAR >= 1500) %>%
+  ggplot(aes(x = DATE, y = COUNTRY)) +
+  geom_timeline()
+
+clean_data %>%
+  filter(COUNTRY %in% c("JAPAN"), YEAR >= 2000) %>%
+  ggplot(aes(x = DATE)) +
+  geom_timeline()+
+  geom_timeline_label(aes(label = LOCATION_NAME, size = EQ_PRIMARY, nmax = 2))
+
+clean_data %>%
+  dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>%
+  eq_map(annot_col = "DATE")
+
+clean_data %>%
+  dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>%
+  dplyr::mutate(popup_text = eq_create_label(.)) %>%
+  eq_map(annot_col = "popup_text")
+
