@@ -17,4 +17,5 @@ VignetteBuilder: knitr
 Imports: dplyr,
     lubridate,
     ggplot2,
-    leaflet
+    leaflet,
+    stringr

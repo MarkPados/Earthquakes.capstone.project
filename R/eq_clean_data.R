@@ -7,6 +7,7 @@
 #'
 #' @import lubridate
 #' @import dplyr
+#' @import stringr
 #'
 #' @export
 
