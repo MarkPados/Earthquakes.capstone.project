@@ -9,7 +9,7 @@
 
 eq_read_data <- function(){
 
-  raw_data <- read.delim("data/signif.txt", sep = "\t", header = TRUE, stringsAsFactors = FALSE)
+  raw_data <- read.delim("~/data/signif.txt", sep = "\t", header = TRUE, stringsAsFactors = FALSE)
 
   return(raw_data)
 
