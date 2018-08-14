@@ -6,6 +6,8 @@
 #' @import leaflet
 #'
 #' @example
+#' raw_data <- eq_read_data()
+#' clean_data <- eq_clean_data(raw_data)
 #' clean_data %>%
 #' dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>%
 #' eq_map(annot_col = "DATE")
@@ -29,6 +31,8 @@ eq_map <- function(data, annot_col = "DATE") {
 #' @import leaflet
 #'
 #' @example
+#' raw_data <- eq_read_data()
+#' clean_data <- eq_clean_data(raw_data)
 #' clean_data %>%
 #' dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>%
 #' dplyr::mutate(popup_text = eq_create_label(.)) %>%

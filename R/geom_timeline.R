@@ -5,6 +5,8 @@
 #' @import ggplot2
 #'
 #' @example
+#' raw_data <- eq_read_data()
+#' clean_data <- eq_clean_data(raw_data)
 #' clean_data %>%
 #' filter(COUNTRY %in% c("HUNGARY", "SLOVAKIA", "CZECH REPUBLIC", "CROATIA", "POLAND"), YEAR >= 1500) %>%
 #'   ggplot(aes(x = DATE, y = COUNTRY)) +
@@ -73,6 +75,8 @@ GeomTimeline <- ggplot2::ggproto('GeomTimeline', ggplot2::Geom,
 #' @import ggplot2
 #'
 #' @example
+#' raw_data <- eq_read_data()
+#' clean_data <- eq_clean_data(raw_data)
 #' clean_data %>%
 #' filter(COUNTRY %in% c("JAPAN"), YEAR >= 2000) %>%
 #' ggplot(aes(x = DATE)) +
