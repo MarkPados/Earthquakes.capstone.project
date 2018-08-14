@@ -13,6 +13,7 @@ Location cleaning
 This function cleanes the location variable
 }
 \examples{
+raw_data <- eq_read_data()
 cleaned_data <- eq_location_clean(raw_data)
 
 }
