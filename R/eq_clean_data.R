@@ -3,6 +3,7 @@
 #' @details This function clean the earthquakes raw database.
 #'
 #' @examples
+#' raw_data <- eq_read_data()
 #' clean_data <- eq_clean_data(raw_data)
 #'
 #' @import lubridate
