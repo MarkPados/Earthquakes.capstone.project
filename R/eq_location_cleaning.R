@@ -6,6 +6,8 @@
 #' raw_data <- eq_read_data()
 #' cleaned_data <- eq_location_cleaning(raw_data)
 #'
+#' @param raw_data Raw dataframe from eq_read_data function.
+#'
 #' @import stringr
 #'
 #' @export

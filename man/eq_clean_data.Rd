@@ -6,6 +6,9 @@
 \usage{
 eq_clean_data(raw_data)
 }
+\arguments{
+\item{raw_data}{Raw dataframe from eq_read_data function.}
+}
 \description{
 Clean data
 }

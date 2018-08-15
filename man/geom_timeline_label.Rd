@@ -8,6 +8,21 @@ geom_timeline_label(mapping = NULL, data = NULL, stat = "identity",
   position = "identity", na.rm = FALSE, show.legend = NA,
   inherit.aes = TRUE, ...)
 }
+\arguments{
+\item{mapping}{Mapping}
+
+\item{data}{Data}
+
+\item{stat}{Stat}
+
+\item{position}{Position}
+
+\item{na.rm}{NA remove}
+
+\item{show.legend}{Show legend}
+
+\item{inherit.aes}{Inherit aes}
+}
 \description{
 Geom timeline label
 }

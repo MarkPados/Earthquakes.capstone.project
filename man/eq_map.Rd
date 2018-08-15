@@ -6,6 +6,11 @@
 \usage{
 eq_map(data, annot_col = "DATE")
 }
+\arguments{
+\item{data}{Cleaned data from eq_clean_data function.}
+
+\item{annot_col}{Annotation column.}
+}
 \description{
 Earthquake map
 }

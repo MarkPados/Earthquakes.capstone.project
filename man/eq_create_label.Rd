@@ -6,6 +6,9 @@
 \usage{
 eq_create_label(data)
 }
+\arguments{
+\item{data}{Cleaned data from eq_clean_data function.}
+}
 \description{
 Earthquake label
 }

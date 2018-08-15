@@ -6,6 +6,8 @@
 #' raw_data <- eq_read_data()
 #' clean_data <- eq_clean_data(raw_data)
 #'
+#' @param raw_data Raw dataframe from eq_read_data function.
+#'
 #' @import lubridate
 #' @import dplyr
 #' @import stringr

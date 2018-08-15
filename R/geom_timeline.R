@@ -12,6 +12,14 @@
 #'   ggplot(aes(x = DATE, y = COUNTRY)) +
 #'   geom_timeline()
 #'
+#' @param mapping Mapping
+#' @param data Data
+#' @param stat Stat
+#' @param position Position
+#' @param na.rm NA remove
+#' @param show.legend Show legend
+#' @param inherit.aes Inherit aes
+#'
 #' @export
 
 geom_timeline <- function(mapping = NULL, data = NULL, stat = "identity", position = "identity",
@@ -82,6 +90,14 @@ GeomTimeline <- ggplot2::ggproto('GeomTimeline', ggplot2::Geom,
 #' ggplot(aes(x = DATE)) +
 #' geom_timeline()+
 #' geom_timeline_label(aes(label = LOCATION_NAME, size = EQ_PRIMARY, nmax = 2, y = 0.15))
+#'
+#' @param mapping Mapping
+#' @param data Data
+#' @param stat Stat
+#' @param position Position
+#' @param na.rm NA remove
+#' @param show.legend Show legend
+#' @param inherit.aes Inherit aes
 #'
 #' @export
 
