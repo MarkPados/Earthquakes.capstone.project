@@ -3,6 +3,7 @@
 #' @details This function creates timeline chart.
 #'
 #' @import ggplot2
+#' @importFrom magrittr %>%
 #'
 #' @examples
 #' raw_data <- eq_read_data()
@@ -37,6 +38,7 @@ geom_timeline <- function(mapping = NULL, data = NULL, stat = "identity", positi
 #'
 #' @import ggplot2
 #' @importFrom grid pointsGrob gpar unit polylineGrob gList
+#' @importFrom magrittr %>%
 #'
 #' @export
 
@@ -82,6 +84,7 @@ GeomTimeline <- ggplot2::ggproto('GeomTimeline', ggplot2::Geom,
 #' @details This function add label to the created custom timeline chart.
 #'
 #' @import ggplot2
+#' @importFrom magrittr %>%
 #'
 #' @examples
 #' raw_data <- eq_read_data()
@@ -122,6 +125,7 @@ geom_timeline_label = function(mapping = NULL, data = NULL, stat = "identity",
 #' @import ggplot2
 #' @importFrom grid pointsGrob gpar unit polylineGrob gList textGrob
 #' @import dplyr
+#' @importFrom magrittr %>%
 #'
 #' @export
 
