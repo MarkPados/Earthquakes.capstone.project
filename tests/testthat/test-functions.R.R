@@ -1,6 +1,7 @@
 context("testthat.R")
 
 test_that("geom_timeline returns a ggplot", {
+  library(dplyr)
 
   raw_data <- Earthquakes.capstone.project::eq_read_data()
 
@@ -18,6 +19,7 @@ test_that("geom_timeline returns a ggplot", {
 
 
 test_that("geom_timeline_label returns also a ggplot", {
+  library(dplyr)
 
   raw_data = Earthquakes.capstone.project::eq_read_data()
 
@@ -36,6 +38,7 @@ test_that("geom_timeline_label returns also a ggplot", {
 
 
 test_that("ep_map works", {
+  library(dplyr)
 
   raw_data = Earthquakes.capstone.project::eq_read_data()
 
@@ -53,6 +56,7 @@ test_that("ep_map works", {
 
 
 test_that("ep_map_label works", {
+  library(dplyr)
 
   raw_data = Earthquakes.capstone.project::eq_read_data()
 
