@@ -5,7 +5,7 @@
 #' @import ggplot2
 #' @import leaflet
 #'
-#' @example
+#' @examples
 #' raw_data <- eq_read_data()
 #' clean_data <- eq_clean_data(raw_data)
 #' clean_data %>%
@@ -33,7 +33,7 @@ eq_map <- function(data, annot_col = "DATE") {
 #' @import ggplot2
 #' @import leaflet
 #'
-#' @example
+#' @examples
 #' raw_data <- eq_read_data()
 #' clean_data <- eq_clean_data(raw_data)
 #' clean_data %>%

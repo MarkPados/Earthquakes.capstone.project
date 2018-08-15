@@ -22,10 +22,21 @@ geom_timeline(mapping = NULL, data = NULL, stat = "identity",
 \item{show.legend}{Show legend}
 
 \item{inherit.aes}{Inherit aes}
+
+\item{...}{Other parameters}
 }
 \description{
 Geom timeline
 }
 \details{
 This function creates timeline chart.
+}
+\examples{
+raw_data <- eq_read_data()
+clean_data <- eq_clean_data(raw_data)
+clean_data \%>\%
+filter(COUNTRY \%in\% c("HUNGARY", "SLOVAKIA", "CZECH REPUBLIC", "CROATIA", "POLAND"), YEAR >= 1500) \%>\%
+  ggplot(aes(x = DATE, y = COUNTRY)) +
+  geom_timeline()
+
 }

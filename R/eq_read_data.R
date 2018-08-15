@@ -17,3 +17,8 @@ eq_read_data <- function(){
 
 }
 
+#' This is data to be included in my package
+#'
+#' @name signif
+#' @docType data
+#' @keywords data

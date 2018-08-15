@@ -4,7 +4,7 @@
 #'
 #' @import ggplot2
 #'
-#' @example
+#' @examples
 #' raw_data <- eq_read_data()
 #' clean_data <- eq_clean_data(raw_data)
 #' clean_data %>%
@@ -19,6 +19,7 @@
 #' @param na.rm NA remove
 #' @param show.legend Show legend
 #' @param inherit.aes Inherit aes
+#' @param ... Other parameters
 #'
 #' @export
 
@@ -82,7 +83,7 @@ GeomTimeline <- ggplot2::ggproto('GeomTimeline', ggplot2::Geom,
 #'
 #' @import ggplot2
 #'
-#' @example
+#' @examples
 #' raw_data <- eq_read_data()
 #' clean_data <- eq_clean_data(raw_data)
 #' clean_data %>%
@@ -98,6 +99,7 @@ GeomTimeline <- ggplot2::ggproto('GeomTimeline', ggplot2::Geom,
 #' @param na.rm NA remove
 #' @param show.legend Show legend
 #' @param inherit.aes Inherit aes
+#' @param ... Other parameters
 #'
 #' @export
 

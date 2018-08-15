@@ -17,3 +17,11 @@ Earthquake map
 \details{
 This function creates earthquake map.
 }
+\examples{
+raw_data <- eq_read_data()
+clean_data <- eq_clean_data(raw_data)
+clean_data \%>\%
+dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) \%>\%
+eq_map(annot_col = "DATE")
+
+}
