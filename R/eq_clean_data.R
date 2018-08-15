@@ -11,6 +11,7 @@
 #' @import lubridate
 #' @import dplyr
 #' @import stringr
+#' @importFrom magrittr %>%
 #'
 #' @export
 

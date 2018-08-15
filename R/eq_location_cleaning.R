@@ -9,6 +9,7 @@
 #' @param raw_data Raw dataframe from eq_read_data function.
 #'
 #' @import stringr
+#' @importFrom magrittr %>%
 #'
 #' @export
 

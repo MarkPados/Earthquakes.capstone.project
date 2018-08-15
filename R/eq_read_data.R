@@ -3,6 +3,7 @@
 #' @details This function opens the earthquakes dataset.
 #'
 #' @import utils
+#' @importFrom magrittr %>%
 #'
 #' @examples
 #' raw_data <- eq_read_data()
