@@ -34,6 +34,7 @@ eq_map <- function(data, annot_col = "DATE") {
 #' @import ggplot2
 #' @import leaflet
 #' @import dplyr
+#' @import magrittr
 #'
 #' @examples
 #' raw_data <- eq_read_data()

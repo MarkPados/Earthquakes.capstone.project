@@ -18,4 +18,5 @@ Imports: dplyr,
     lubridate,
     ggplot2,
     leaflet,
-    stringr
+    stringr,
+    magrittr
