@@ -18,9 +18,8 @@ This function creates earthquake map label.
 \examples{
 raw_data <- eq_read_data()
 clean_data <- eq_clean_data(raw_data)
-clean_data \%>\%
-dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) \%>\%
-dplyr::mutate(popup_text = eq_create_label(.)) \%>\%
-eq_map(annot_col = "popup_text")
+clean_data <- dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000)
+clean_data <- dplyr::mutate(popup_text = eq_create_label(.))
+eq_map(clean_data, annot_col = "popup_text")
 
 }

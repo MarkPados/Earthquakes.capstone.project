@@ -55,7 +55,7 @@ The cleaning part of the package is composed 2+1 functions:
 
 
 ## Examples
-
+library(dplyr)
 raw_data = Earthquakes.capstone.project::eq_read_data()
 
 clean_data = Earthquakes.capstone.project::eq_clean_data(raw_data)

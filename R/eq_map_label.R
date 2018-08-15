@@ -10,9 +10,8 @@
 #' @examples
 #' raw_data <- eq_read_data()
 #' clean_data <- eq_clean_data(raw_data)
-#' clean_data %>%
-#' dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>%
-#' eq_map(annot_col = "DATE")
+#' clean_data <- dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000)
+#' eq_map(clean_data, annot_col = "DATE")
 #'
 #' @param data Cleaned data from eq_clean_data function.
 #' @param annot_col Annotation column.
@@ -40,10 +39,9 @@ eq_map <- function(data, annot_col = "DATE") {
 #' @examples
 #' raw_data <- eq_read_data()
 #' clean_data <- eq_clean_data(raw_data)
-#' clean_data %>%
-#' dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>%
-#' dplyr::mutate(popup_text = eq_create_label(.)) %>%
-#' eq_map(annot_col = "popup_text")
+#' clean_data <- dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000)
+#' clean_data <- dplyr::mutate(popup_text = eq_create_label(.))
+#' eq_map(clean_data, annot_col = "popup_text")
 #'
 #' @param data Cleaned data from eq_clean_data function.
 #'
