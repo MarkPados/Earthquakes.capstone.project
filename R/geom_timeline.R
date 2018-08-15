@@ -9,7 +9,7 @@
 #' @examples
 #' raw_data <- eq_read_data()
 #' clean_data <- eq_clean_data(raw_data)
-#' clean_data <- filter(COUNTRY %in% c("HUNGARY", "SLOVAKIA", "CZECH REPUBLIC", "CROATIA", "POLAND"), YEAR >= 1500)
+#' clean_data <- dplyr::filter(clean_data, COUNTRY %in% c("HUNGARY", "SLOVAKIA", "CZECH REPUBLIC", "CROATIA", "POLAND"), YEAR >= 1500)
 #' ggplot(clean_data, aes(x = DATE, y = COUNTRY)) +
 #' geom_timeline()
 #'
@@ -91,7 +91,7 @@ GeomTimeline <- ggplot2::ggproto('GeomTimeline', ggplot2::Geom,
 #' @examples
 #' raw_data <- eq_read_data()
 #' clean_data <- eq_clean_data(raw_data)
-#' clean_data <- filter(COUNTRY %in% c("JAPAN"), YEAR >= 2000)
+#' clean_data <- dplyr::filter(clean_data, COUNTRY %in% c("JAPAN"), YEAR >= 2000)
 #' ggplot(clean_data, aes(x = DATE)) +
 #' geom_timeline()+
 #' geom_timeline_label(aes(label = LOCATION_NAME, size = EQ_PRIMARY, nmax = 2, y = 0.15))
