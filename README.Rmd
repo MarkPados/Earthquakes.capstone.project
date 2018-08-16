@@ -17,3 +17,7 @@ knitr::opts_chunk$set(
 # Earthquakes.capstone.project
 
 The Earthquakes.capstone.project is the capstone project of Coursera specialization "Mastering Software Development in R".
+
+### Trevis badge
+
+[![Travis-CI Build Status](https://travis-ci.org/MarkPados/buildingpackagefars.svg?branch=master)](https://travis-ci.org/MarkPados/Earthquakes.capstone.project)
