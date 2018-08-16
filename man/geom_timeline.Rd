@@ -32,6 +32,7 @@ Geom timeline
 This function creates timeline chart.
 }
 \examples{
+require(ggplot2)
 raw_data <- eq_read_data()
 clean_data <- eq_clean_data(raw_data)
 clean_data <- dplyr::filter(clean_data, COUNTRY \%in\% c("HUNGARY", "SLOVAKIA", "CZECH REPUBLIC", "CROATIA", "POLAND"), YEAR >= 1500)
