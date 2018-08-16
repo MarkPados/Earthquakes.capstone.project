@@ -90,7 +90,7 @@ GeomTimeline <- ggplot2::ggproto('GeomTimeline', ggplot2::Geom,
 #' @importFrom magrittr %>%
 #'
 #' @examples
-#' #' require(ggplot2)
+#' require(ggplot2)
 #' raw_data <- eq_read_data()
 #' clean_data <- eq_clean_data(raw_data)
 #' clean_data <- dplyr::filter(clean_data, COUNTRY %in% c("JAPAN"), YEAR >= 2000)
