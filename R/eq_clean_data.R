@@ -8,10 +8,11 @@
 #'
 #' @param raw_data Raw dataframe from eq_read_data function.
 #'
-#' @import lubridate
 #' @import dplyr
 #' @import stringr
 #' @importFrom magrittr %>%
+#' @importFrom lubridate ymd
+#' @importFrom lubridate year
 #'
 #' @export
 

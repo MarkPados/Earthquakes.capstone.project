@@ -15,7 +15,6 @@ Suggests: knitr,
     testthat
 VignetteBuilder: knitr
 Imports: dplyr,
-    lubridate,
     ggplot2,
     leaflet,
     stringr,
