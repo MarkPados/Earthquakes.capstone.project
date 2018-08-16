@@ -40,7 +40,7 @@ eq_map <- function(data, annot_col = "DATE") {
 #' raw_data <- eq_read_data()
 #' clean_data <- eq_clean_data(raw_data)
 #' clean_data <- dplyr::filter(clean_data, COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000)
-#' clean_data <- dplyr::mutate(clean_data, popup_text = eq_create_label(.))
+#' clean_data <- dplyr::mutate(clean_data, popup_text = eq_create_label(clean_data))
 #' eq_map(clean_data, annot_col = "popup_text")
 #'
 #' @param data Cleaned data from eq_clean_data function.
